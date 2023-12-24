@@ -3,9 +3,10 @@ export type User = {
   name: string
   email: string
   password_hash: string
-  created_at: Date
+  created_at?: Date
 }
 
 export type UserData = User & {
   id: string
+  created_at: Date
 }
