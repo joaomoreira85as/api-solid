@@ -10,13 +10,3 @@ export const mapPrismaUserToUserData = (user: User): UserData => {
     created_at: user.created_at,
   }
 }
-
-export const mapUserDataToUser = (user: UserData): User => {
-  return {
-    id: user?.id,
-    name: user.name,
-    email: user.email,
-    password_hash: user.password_hash,
-    created_at: user.created_at,
-  }
-}
